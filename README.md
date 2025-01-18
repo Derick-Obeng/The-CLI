@@ -2,7 +2,8 @@
 
 The link to the project goes here https://roadmap.sh/projects/task-tracker
 
-**Task Tracker CLI**
+
+## Task Tracker CLI
 
 ---
 
