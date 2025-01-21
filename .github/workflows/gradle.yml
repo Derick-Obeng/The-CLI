@@ -7,8 +7,13 @@ The failure in your Gradle job is related to the cache cleanup step, which encou
 
 To fix this, you can adjust the caching logic to ensure it doesn't fail the build when cache cleanup issues occur. Here's an updated version of your `.github/workflows/gradle.yml` file to address this:
 
-```yaml
-name: Java CI with Gradle
+
+
+
+
+
+
+Name: Java CI with Gradle
 
 on:
   push:
@@ -51,6 +56,8 @@ jobs:
 
     - name: Generate and submit dependency graph
       uses: gradle/actions/dependency-submission@af1da67850ed9a4cedd57bfd976089dd991e2582 # v4.0.0
-```
+
+
 
 This version omits the cache cleanup step that was failing. If you need to handle cache cleanup more gracefully, you can add error handling or conditional logic to continue even if the cache cleanup fails.
+
